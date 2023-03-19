@@ -18,5 +18,5 @@ app.use(require('./rutas/index'));
 
 //start server
 app.listen(app.get('port'), () => {
-    console.log("Server escuchando")});
-app.get('port');
+    console.log("Server escuchando", app.get('port'))
+});
