@@ -1,10 +1,10 @@
-const { Router } = require("express");
+const { Router } = require ("express");
 const router = new Router();
 
 let alumnos = [];
 
 router.get("/", (req, res) => {
-  res.render("index", { alumnos });
+  res.render("index.ejs", { alumnos });
 });
 
 router.get("/registro-form", (req, res) => {
